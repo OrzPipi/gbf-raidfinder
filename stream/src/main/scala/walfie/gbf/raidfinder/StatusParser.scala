@@ -6,7 +6,7 @@ import scala.util.Try
 
 object StatusParser {
   /** Regexes to match raid request tweets */
-  val RaidRegexJapanese = "((?s).*)参加者募集！参戦ID：([0-9A-F]+)\n(.+)\n?(.*)".r
+  val RaidRegexJapanese = "(.*) ([0-9A-F]+) :参戦ID\n参加者募集！\n(.+)?".r
   val RaidRegexEnglish = "((?s).*)I need backup!Battle ID: ([0-9A-F]+)\n(.+)\n?(.*)".r
 
   /**
